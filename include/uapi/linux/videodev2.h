@@ -1331,6 +1331,9 @@ struct v4l2_dv_timings {
 /* Values for the type field */
 #define V4L2_DV_BT_656_1120	0	/* BT.656/1120 timing type */
 
+#define V4L2_DV_BT_SB_HALF	(1 << 8)	/* side-by-side S3D type */
+#define V4L2_DV_BT_TB		(1 << 6)	/* top and bottom S3D type */
+#define V4L2_DV_BT_FP		(1 << 0)	/* frame packing S3D type */
 
 /** struct v4l2_enum_dv_timings - DV timings enumeration
  * @index:	enumeration index
